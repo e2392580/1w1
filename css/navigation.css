@@ -1,0 +1,18 @@
+.navigation {
+    display: flex;
+    position: sticky;
+    top: 80px;
+    right: 0;
+    background-color: black;
+    margin-left: auto; /* Utilise l'esapce restant à gauche de la navigation */
+    transform: translateX(400%);
+    transition: transform .25s;
+    gap:10px ;
+    padding:40px ;
+    flex-direction: column ;
+    position:absolute ;
+
+}
+.navigation a {
+    color: white;
+}

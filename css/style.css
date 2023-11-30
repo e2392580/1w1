@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+header h1 {
+    font-size: 4rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: #343434;
+    text-shadow: 5px 6px 1px #ababab
+}
+
+/* la balise de body est le conteneur principal
+   flexbox dont les enfants s'afficheront sur une colonne
+   flex-direction : column;
+*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* operateur de selection « > » permet de selectionner l'enfant dire de la balise qui precede le plus « > » 
+   la difference entre « > » et l'espace. C'est que plus grand permet de l'enfant direct et « » permet de selectionner l'enfant l'arriere petite enfant et ainsi de suite
+   le « > » est plus specifique que l'operateur « » 
+*/
+
+/* C'est toujours le dernier element de la suite qui est selectionner
+   Et c'est sur le dernier element qu'on applique la regle de style 
+*/
+body > div {
+    display: flex;
+    justify-content: center;
+}
+#entete{
+    padding: 0;
+}
+body > div > section,
+body > div > footer,
+body > div > header {
+    display: flex;
+    flex: 0 1 1100px;
+    border: 1px solid #aaa;
+    background-color: rgba(0, 0, 0,.1); /* filtre de transparence */
+}
+
+body > div > section{
+    padding-top: 100px;
+}
+body > div > header {
+    position: sticky;
+}
+body > div > section{
+    min-height: 100vh;
+}
+body>div:nth-of-type(1) {
+    background-color: #f25f5feb ;
+}
+body>div:nth-of-type(2) {
+    background-color: #009dff ;
+}
+body>div:nth-of-type(3) {
+    background-color: rgb(0, 194, 120) ;
+}
+body>div:nth-of-type(4) {
+    background-color: rgb(158, 41, 169) ;
+}
+body>div:nth-of-type(5) {
+    background-color: #9dac7e ;
+}
+body h2 {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body
+
+/* NAVIGATION */
+
+#chk_burger{
+    display: none;
+    right: 0;
+}
+#chk_burger:checked ~ .navigation {
+    background-color: rgb(0, 0, 0);
+    transform: translateX(0);
+}
+#burger{
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+}
+#burger img{
+   display: block;
+}
+
+/* ACCUEIL */
+
+section#accueil {
+    flex-direction: column;
+}
+#accueil li{
+    font-size: 20px;
+}
+
+/* PIED DE PAGE */
+
+.piedpage {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    gap: 50px;
+  }
+  
+  .piedpage h3 {
+    margin-bottom: 10px;
+  }
+  .pied__adresse {
+    flex: 1 1 25%;
+  }
+  .pied__adresse ul,
+  .pied__cours ul {
+  }
+  
+  .pied__cours {
+    flex: 1 1 25%;
+  }
+  
+  .pied__resume {
+  
+  }
+  .pied__sociaux{
+    margin-left: 480px;
+  }
+  
+
+
+
+

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/formulaire.css">
+    <link rel="stylesheet" href="css/horaire.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="entete">
+    <header>
+        <img src="images/NBA_logo.png" alt="">
+        <h1>Basketball</h1>
+        <!-- https://svgbox.net/-->
+        <!-- id peut etre utliser une seule fois dans le document
+             la meme class peut etre utiliser plusieurs fois 
+        -->
+        <input type="checkbox" id="chk_burger">
+        <label for="chk_burger" id="burger">
+            <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32">
+        </label>
+        <nav class="navigation">
+            <a href="#accueil">Accueil</a>
+            <a href="#horaire">Horaire</a>
+            <a href="#inscription">Inscription</a>
+        </nav>
+    </header>
+    </div> <!-- Fin entete -->
+    <div>
+        <section id="accueil">
+            <h2>Accueil</h2>
+            <h3>Introduction</h3>
+            <li>Eric Vu</li>
+            <li>TIM 1W1</li>
+            <li>nba player</li>
+        </section>
+    </div>
+    <div>
+        <section id="horaire">
+            <table>
+                <caption class="horaire">Horaire session A2023</caption>
+                <!-- Le premier tr, la premiere ligne, ( table row ), contient les 5 jours de la semaine-->
+                <tr class="jours">
+                    <th></th>
+                    <th>LUN</th>
+                    <th>MAR</th>
+                    <th>MER</th>
+                    <th>JEU</th>
+                    <th>VEN</th>
+                </tr>
+                <tr>
+                    <th class="heure">8h</th>
+                    <td class="cours"></td>
+                    <td rowspan="4" class="cours_FRA">FRA</td>
+                    <td rowspan="2" class="cours_1M2" >1M2</td>
+                    <td rowspan="2" class="cours_1W1">1W1</td>
+                    <td rowspan="3" class="cours_1M2">1M2</td>
+                </tr>
+                <tr>
+                    <th class="heure">9h</th>
+                    <td rowspan="3" class="cours_1W1">1W1</td>
+                </tr>
+                <tr>
+                    <th class="heure">10h</th>
+                    <td class="cours"></td>
+                    <td class="cours"></td>
+                </tr>
+                 <tr>
+                    <th class="heure">11h</th>
+                    <td class="cours"></td>
+                    <td class="cours"></td>
+                    <td rowspan="3" class="cours_1J1">1J1</td>
+        
+                </tr>
+                <tr>
+                    <th class="heure">12h</th>
+                    <td class="cours"></td>
+                    <td rowspan="2" class="cours_PAU">PAU</td>
+                    <td class="cours"></td>
+                    <td rowspan="2" class="cours_PAU">PAU</td>
+        
+                </tr>
+                <tr>
+                    <th class="heure">13h</th>
+                    <td class="cours"></td>
+                    <td class="cours"></td>
+        
+                </tr>
+                <tr>
+                    <th class="heure">14h</th>
+                    <td class="cours"></td>
+                    <td rowspan="2" class="cours_1J1">1J1</td>
+                    <td rowspan="3" class="cours_1M1">1M1</td>
+                    <td rowspan="2" class="cours_VOL">VOL</td>
+                    <td class="cours"></td>
+                </tr>
+                 <tr>
+                    <th class="heure">15h</th>
+                    <td rowspan="2" class="cours_ANG">ANG</td> 
+                    <td class="cours"></td>
+                </tr>
+                <tr>
+                    <th class="heure">16h</th>
+                    <td class="cours"></td>
+                    <td class="cours"></td>
+                    <td class="cours"></td>
+                </tr>
+                 <tr>
+                    <th class="heure">17h</th>
+                    <td class="cours"></td>
+                    <td class="cours"></td>
+                    <td class="cours"></td>
+                    <td class="cours"></td>
+                    <td class="cours"></td>
+                </tr>
+            </table>
+        </section>
+    </div>
+    <div>
+        <section id="inscription">
+            <h2>Inscription</h2>  
+ 
+            <div class="formulaire_inscription">
+                <form action="" class="formulaire">
+                    <input type="text" placeholder="Nom" class="name">
+                    <input type="text" placeholder="Prénom" class="name">
+                    <input type="text" placeholder="Numéro de téléphone" class="name">
+                    <input type="email" placeholder="Email" class="email">
+                   
+                <fieldset>
+                    <legend>Langage</legend>
+                <label class="chk_html">HTML <input id= "chk_html" type="checkbox" id=""></label>
+                <label class="">CSS <input type="checkbox" id=""></label>
+                <label class="">JSS <input type="checkbox" id=""></label>
+            </fieldset>
+ 
+            <fieldset>
+                <legend>Age</legend>
+            <label class="chk_html">18-20 <input type="checkbox" id=""></label>
+            <label class="">21-30 <input type="checkbox" id=""></label>
+            <label class="">31-40 <input type="checkbox" id=""></label>
+            </fieldset>
+            <button type="submit" class="button">S'incrire</button>
+            <button type="submit" class="button">Me connecter</button>
+            </form>
+        </section>
+    </div>
+    <div id="contact">
+        <footer class="piedpage">
+            <section class="pied__adresse">
+              <h3>Adresse</h3>
+              <ul>
+                <p>3800 Sherbrooke est</p>
+                <p>Montréal, QC</p>
+                <p>H1X 2A2</p>
+              </ul>
+            </section>
+            <section class="pied__cours">
+              <h3>Cours</h3>
+              <ul>
+                <p>1W1-Mise en page Web</p>
+                <p>1J1-Animation et intéractivité en jeux</p>
+                <p>1M1-Création vidéo</p>
+                <p>1M2-Conception graphique et img matricielle</p>
+              </ul>
+            </section>
+            <section class="pied__resume">
+              <h3>Résumé</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil
+                ipsam rerum aliquid officiis! Nihil hic illum nemo soluta iure
+                possimus reiciendis deserunt. Magni impedit sint harum corporis quia
+                culpa. ipsam rerum aliquid officiis! Nihil hic illum nemo soluta iure
+                possimus reiciendis deserunt. Magni impedit sint harum corporis quia
+                culpa
+              </p>
+            </section>
+            <section class="pied__sociaux">
+                <img src="images/facebook_32.png" alt="">
+                <img src="images/instagram_32.png" alt="">
+                <img src="images/youtube_32.png" alt="">
+            </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+table{
+    border-collapse: collapse;
+}
+th, td, table {
+    /*border: 1px solid black;*/
+}
+td, th{
+    padding: 10px;
+    font-size: 3rem;
+}
+th{
+    background-color: rgb(173, 173, 255);
+    border: 1px solid black
+}
+tr{
+    
+}
+.cours {
+    border: 1px solid black;
+    background-color: white;
+    font-family: "Audiowide", sans-serif;
+}
+caption{
+    font-size: 2rem;
+    background-color: aliceblue;
+    font-family: "Sofia", sans-serif;
+}
+.cours_FRA {
+    border: 1px solid black;
+    background-color: brown;
+    font-family: "Audiowide", sans-serif;
+}
+.cours_1J1{
+    border: 1px solid black;
+    background-color: green;
+    font-family: "Audiowide", sans-serif;
+}
+.cours_1M1{
+    border: 1px solid black;
+    background-color: red;
+    font-family: "Audiowide", sans-serif;
+}
+.cours_1M2{
+    border: 1px solid black;
+    background-color: greenyellow;
+    font-family: "Audiowide", sans-serif;
+}
+.cours_1W1{
+    border: 1px solid black;
+    background-color: blue;
+    font-family: "Audiowide", sans-serif;
+}
+.cours_VOL{
+    border: 1px solid black;
+    background-color: aqua;
+    font-family: "Audiowide", sans-serif;
+}
+.cours_ANG{
+    border: 1px solid black;
+    background-color: blueviolet;
+    font-family: "Audiowide", sans-serif;
+}
+.jours{
+    font-family: "Trirong", sans-serif;
+}
+th{
+    font-family: "Agbalumo", sans-serif;
+}
+.cours_PAU{
+    background-color: crimson;
+}
+section#horaire {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
