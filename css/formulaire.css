@@ -5,7 +5,7 @@
     gap: 10px;
     flex-wrap: wrap;
     border: 2px solid black;
-    background-color: aqua;
+    background-color: rgb(54, 50, 50);
     padding: 10px;
 }
 /*.formulaire input[type="text"]{
@@ -31,7 +31,7 @@
 }
 .button{
     flex: 1 0 5rem;
-    background-color: blanchedalmond;
+    background-color: rgb(39, 39, 39);
     cursor: pointer;
 }
 input, button {

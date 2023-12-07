@@ -1,0 +1,17 @@
+.galerie{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.galerie__figure{
+    flex: 0 1 200px;
+    border: 1px dotted #aaa;
+}
+.galerie__img{
+    filter: grayscale(100%) drop-shadow(10px 15px 20px #232323);
+    width: 100%;
+}
+.galerie__img:hover{
+    filter: grayscale(0);
+}
+.galerie__caption{}
