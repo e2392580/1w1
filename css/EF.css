@@ -1,0 +1,90 @@
+#article{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.article__section01 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 350px;
+}
+.article__section02 {
+    display: flex;
+    flex-direction: row;
+    gap: 350px;
+}
+.article__section03 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 350px;
+}
+.article__section04 {
+    display: flex;
+    flex-direction: row;
+    gap: 350px;
+}
+.article__section05 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 350px;
+}
+.article__section06 {
+    display: flex;
+    flex-direction: row;
+    gap: 350px;
+}
+.article__section07 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 350px;
+}
+.article__img1{
+    transform: rotate(10deg);
+    border-radius: 25px;
+}
+.article__img2{
+    transform: rotate(-10deg);
+    border-radius: 25px;
+}
+.article__img3{
+    transform: rotate(10deg);
+    border-radius: 25px;
+}
+.article__img4{
+    transform: rotate(-10deg);
+    border-radius: 25px;
+}
+.article__img5{
+    transform: rotate(10deg);
+    border-radius: 25px;
+}
+.article__img6{
+    transform: rotate(-10deg);
+    border-radius: 25px;
+}
+.article__img7{
+    transform: rotate(10deg);
+    border-radius: 25px;
+}
+
+h2{
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 60px;
+    position: absolute;
+    right: 900px;
+    margin: -95px;
+    color: rgb(150, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+}
+.article p{
+    font-family: 'Pacifico', sans-serif;
+    font-size: 1.7rem;
+    color: #580606;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px;
+}
+.article__figcaption{
+    font-family: 'Pacifico', sans-serif;
+}
+

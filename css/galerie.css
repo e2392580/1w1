@@ -12,6 +12,6 @@
     width: 100%;
 }
 .galerie__img:hover{
-    filter: grayscale(100%);
+    filter: grayscale(0);
 }
 .galerie__caption{}

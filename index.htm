@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/galerie.css">
     <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" href="css/EF.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div id="entete">
@@ -23,13 +27,13 @@
         -->
         <input type="checkbox" id="chk_burger">
         <label for="chk_burger" id="burger">
-            <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32">
+            <img alt="" src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32">
         </label>
         <nav class="navigation">
             <a href="#accueil">Accueil</a>
             <a href="#horaire">Horaire</a>
             <a href="#inscription">Inscription</a>
-            <a href="#articles">Article</a>
+            <a href="#article">Article</a>
             <a href="#galerie">Galerie</a>
             <a href="#video">Video</a>
             <a href="#pied">Pied de page</a>
@@ -39,8 +43,9 @@
     <div>
         <section id="accueil">
             <h1>Accueil</h1>
-            <h2>TP2</h2>
+            
             <ul class="profil">
+            <li>TP2</li>
             <li>Eric Vu</li>
             <li>582-1W1 - Mise en page Web</li>
             <li>Technique d'intégration multimédia</li>
@@ -136,69 +141,103 @@
     <div>
         <section id="inscription">
             <h1>Inscription</h1>  
- 
             <div class="formulaire_inscription">
-                <form action="" class="formulaire">
+                <form action="form" class="formulaire">
                     <input type="text" placeholder="Nom" class="name">
                     <input type="text" placeholder="Prénom" class="name">
                     <input type="text" placeholder="Numéro de téléphone" class="name">
                     <input type="email" placeholder="Email" class="email">
-                   
                 <fieldset>
                     <legend>Langage</legend>
-                <label class="chk_html">HTML <input id= "chk_html" type="checkbox" id=""></label>
-                <label class="">CSS <input type="checkbox" id=""></label>
-                <label class="">JSS <input type="checkbox" id=""></label>
+                <label class="chk_html">HTML <input id="chk_html" type="checkbox"></label>
+                <label class="">CSS <input type="checkbox"></label>
+                <label class="">JSS <input type="checkbox"></label>
             </fieldset>
- 
             <fieldset>
                 <legend>Age</legend>
-            <label class="chk_html">18-20 <input type="checkbox" id=""></label>
-            <label class="">21-30 <input type="checkbox" id=""></label>
-            <label class="">31-40 <input type="checkbox" id=""></label>
+            <label class="chk_html">18-20 <input type="checkbox"></label>
+            <label class="">21-30 <input type="checkbox"></label>
+            <label class="">31-40 <input type="checkbox"></label>
             </fieldset>
             <button type="submit" class="button">S'incrire</button>
             <button type="submit" class="button">Me connecter</button>
             </form>
+            </div>
         </section>
     </div>
-    <div>
-        <section id="article">
-            <h1>Article</h1>
-        </section>
-    </div>
+    <div id="article">
+        <section> 
+          <h2>Article</h2>
+          <article class="article">
+            <section class="article__section01">
+              <figure class="article__figure">
+                <img src="images/noel_10.jpg" alt="" class="article__img1">
+                <figcaption class="article__figcaption">La fête de   Noël</figcaption>
+              </figure>
+              <p class="article__paragraphe">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita labore ullam ea! Porro, laudantium nisi. Sequi similique nihil sed nesciunt. Corporis accusantium doloribus fuga similique dicta dolor asperiores perspiciatis ad.
+              </p>   
+            </section>
+            <section class="article__section02">
+                <figure class="article__figure">
+                  <img src="images/noel_02.jpg" alt="" class="article__img2">
+                  <figcaption class="article__figcaption">La fête de   Noël</figcaption>
+                </figure>
+                <p class="article__paragraphe">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita labore ullam ea! Porro, laudantium nisi. Sequi similique nihil sed nesciunt. Corporis accusantium doloribus fuga similique dicta dolor asperiores perspiciatis ad.
+                </p>
+              </section>
+              <section class="article__section03">
+                <figure class="article__figure">
+                  <img src="images/noel_04.jpg" alt="" class="article__img3">
+                  <figcaption class="article__figcaption">La fête de Noël</figcaption>
+                </figure>
+                <p class="article__paragraphe">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita labore ullam ea! Porro, laudantium nisi. Sequi similique nihil sed nesciunt. Corporis accusantium doloribus fuga similique dicta dolor asperiores perspiciatis ad.
+                </p>
+              </section>
+           </article>
+           </section>
+    </div>  
     <div>
         <section id="galerie">
             <h1>Galerie</h1>
             <figure class="galerie__figure">
                 <img class="galerie__img" src="images/lebron.png" alt="lebron">
                 <figcaption class="galerie__caption">lebron james</figcaption>
-            </figure>
+                <img class="galerie__img" src="images/curry.png" alt="lebron">
+                <figcaption class="galerie__caption">Stephen Curry</figcaption>
+                <img class="galerie__img" src="images/durant.png" alt="lebron">
+                <figcaption class="galerie__caption">Kevin Durant</figcaption>
+                <img class="galerie__img" src="images/bryant.jpg" alt="lebron">
+                <figcaption class="galerie__caption">Kobe Bryant</figcaption>
+                <img class="galerie__img" src="images/yao.png" alt="lebron">
+                <figcaption class="galerie__caption">Yao Ming</figcaption>
+              </figure>
         </section>
     </div>
     <div>
-        <section id="video">
-            <h1>Vidéo</h1>
-        </section>
-    </div>
+      <section id="video">
+          <h1>Vidéo</h1>
+          <video width="800" height="600" controls>
+              <source src="videos/yaoming.mp4" type=video/mp4>
+          </video>
+      </section>
+  </div>
     <div id="contact">
         <footer class="piedpage">
             <section class="pied__adresse">
               <h3>Adresse</h3>
-              <ul>
                 <p>3800 Sherbrooke est</p>
                 <p>Montréal, QC</p>
                 <p>H1X 2A2</p>
-              </ul>
             </section>
             <section class="pied__cours">
               <h3>Cours</h3>
-              <ul>
                 <p>1W1-Mise en page Web</p>
                 <p>1J1-Animation et intéractivité en jeux</p>
                 <p>1M1-Création vidéo</p>
                 <p>1M2-Conception graphique et img matricielle</p>
-              </ul>
             </section>
             <section class="pied__resume">
               <h3>Résumé</h3>
@@ -216,6 +255,10 @@
                 <img src="images/instagram_32.png" alt="">
                 <img src="images/youtube_32.png" alt="">
             </section>
+            <section class="avis">
+              <p>Avis de confidentialité | Privacy Notice</p>
+            </section>
+        </footer>
     </div>
 </body>
 </html>
